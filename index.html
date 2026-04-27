@@ -1,22 +1,31 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<head>
+  <head>
     <title>Task Manager</title>
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <div class="flex flex-col justify-center items-center">
+      <h1 class="text-3xl pt-5">Task Manager</h1>
+      <div class="my-5 flex justify-center items-center">
+        <input
+          class="border-1 my-5 p-2 rounded bg-[#D3D3D3] mx-3"
+          type="text"
+          id="taskInput"
+          placeholder="Enter task"
+        />
+        <div id="addBtn" class="border-1 p-2 rounded-circle text-center h-10 cursor-pointer">
+          Add Task
+        </div>
+      </div>
 
-<h1>Task Manager</h1>
+      <ul id="taskList"></ul>
+    </div>
 
-<input type="text" id="taskInput" placeholder="Enter task">
-<button id="addBtn">Add Task</button>
-
-<ul id="taskList"></ul>
-
-<script src="lib/jquery.min.js"></script>
-<script src="js/api.js"></script>
-<script src="js/ui.js"></script>
-<script src="js/app.js"></script>
-
-</body>
+    <script src="lib/jquery.min.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/app.js"></script>
+  </body>
 </html>
